@@ -1,0 +1,12 @@
+table{
+    background-color: rgb(33, 128, 128);
+    border: 2px solid;
+}
+td{
+    border: 2px solid;
+    background-color: rgb(152, 71, 71);
+}
+tr{
+    border: 2px solid;
+    background-color: bisque;
+}

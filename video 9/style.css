@@ -1,0 +1,15 @@
+.red
+{
+    color: rgb(234, 111, 18);
+}
+.green
+{
+    background-color: rgb(27, 30, 30);
+}
+#second
+{
+    color: blue;
+}
+ /* "." represent the class ..
+    "#" represent the id...
+    classes would be same but id for everyone is different...is just like adhar card */
