@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style> 
+    
+    /* element selector */
+        div{  
+            background-color: blue;
+            color: yellow;
+        }
+        
+        /* class selector */
+        .change{ 
+           color: black;
+           background-color: red;
+        } 
+        
+        /* ID selector */
+        #anotherchange{  
+            color: red;
+            background-color: black;
+        }
+        
+        /* child selector :- yeh direct kr rha h paragrapgh me but niche wale div me article ke ander paragrapgh toh yeh apply nhi hoga */
+        span > p{   
+            color: bisque;
+            background-color: brown;
+        } 
+
+        /* Descendant selector */
+        div p {    
+            color: green;
+            background-color: black;
+        } 
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+                color: rgb(157, 234, 22);
+        }
+        a:link{
+            color: rgb(72, 13, 13);
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child
+        {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i m first</p>
+        <p>i m second</p>
+    </main>
+    <div>i m a good boy</div>
+    <div>kitne bhi div bna lu ..sabme isme hi aayega but alag bnane ke liye mujhhe class ka use krna pdega</div>
+    <div class="change">i want to change his color</div>
+    <div id="anotherchange">it is unique..classes woukd bhi same but id will noot</div>
+    <span>
+        <p> get lost saali..bahot ho gya tera</p>
+    </span>
+        <div>
+        <article>
+            <p> isme color aana chaye jo uper wale me aaya but article lgane ki wajah se wo nhi aa rha toh iska ilaaz h...</p>
+        </article>
+        </div>
+    <a href="https://www.google.com/">GO TO GOOGLE</a>
+    <a href="https://www.facebook2.com/">GO TO Facebook</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+td{
+    border: 2px solid rgb(7, 69, 7);
+}
+body{
+    background-color: black;
+}
+table{
+    background-color: aqua;
+}
+ul{
+    background-color: azure;
+}
+ol{
+    background-color: bisque;
+}
+caption{
+    background-color: aquamarine;
+}
+tfoot{
+    background-color: aquamarine;
+}
+dl{
+    background-color: bisque;
+}
