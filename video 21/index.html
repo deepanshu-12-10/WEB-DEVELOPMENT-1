@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPecificity</title>
+</head>
+<style>
+    /* this is element selector and its specificity =1 but here we add !important that's why it showing its color */
+    h1 {
+        color: aqua !important;
+    }
+
+    /* this is class selecor and its specificity = 10 */
+    .CRED {
+        color: red;
+    }
+
+    /* this is also class selector and its specificity =10 */
+    .CGREEN {
+        color: green;
+    }
+
+    /* the specificity of this is 10 */
+    .CYELLOW {
+        color: yellow;
+    }
+
+    /* this is a attribute selector and its specificity is 10 */
+    [data-x=a] {
+        color: brown;
+    }
+
+    /* specificity of this is 1 + 10 +10 +10 +10 =41 */
+    a.harryclass.rohan-class[href]:hover {
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- learn all specificity on this link :- https://www.codewithharry.com/tutorial/css-specificity/ -->
+    <div>
+        <h1 class="CRED CGREEN CYELLOW" data-x="a">CSS SPECIFICITY</h1>
+    </div>
+</body>
+
+</html>

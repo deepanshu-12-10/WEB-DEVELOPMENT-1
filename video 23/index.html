@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+</head>
+<!-- learn all CSS Display Property from this link :- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid black;
+        width: 80px;
+        /* if a use "inline" only then the width and margin on uper side will have
+       no effect so to overcome this we use "inline-block".
+      */
+        /* display: inline; */
+        display: inline-block;
+        margin: 30px;
+        padding: 10px;
+        display: inline flex;
+        justify-content: center;
+
+    }
+
+    .box1 {
+        margin: 35px;
+        padding: 45px;
+        border: 3px solid black;
+        /* "none" is used to remove the whole written and also remove reserved space of it */
+        /* display: none; */
+        /* "visibility hidden" is used to remove the whole written but it reserved the space of it */
+        /* visibility: hidden; */
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="box1">
+        i am also another box.
+    </div>
+    <div class="box">
+        I am a Box.
+    </div>
+    <div class="box">
+        also a box.
+    </div>
+    <span>i am good</span>
+    <span>boy</span>
+
+</body>
+
+</html>
