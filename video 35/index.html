@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+</head>
+<style>
+    .boxes :nth-child(1) {
+        background-color: red;
+    }
+
+    .box::first-line {
+        color: yellow;
+    }
+    .boxes *{
+        color: aqua;
+    }
+    [data-color="primary"]{
+        margin-top: 20px;
+    }
+    .boxes  :nth-child(even){
+        background-color: blue;
+    }
+    .boxes :nth-last-child(1){
+        background-color: black;
+    }
+    .boxes::before{
+        content: "deepanshu is good";
+    }
+    .boxes::after{
+        content: "hi i am also good";
+        color: darkgreen;
+    }
+    ::selection{
+        background-color: black;
+        color: red;
+    }
+    .box::first-letter{
+        color:beige;
+        font-size: 30px;
+    }
+    input::placeholder{
+        color: beige;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident porro asperiores hic.
+            Dignissimos nulla aperiam voluptatum, expedita quam recusandae corrupti necessitatibus, non itaque,
+            inventore eveniet fugiat. Esse, nulla amet ea reprehenderit libero id a in debitis asperiores. Dignissimos
+            laudantium corporis, sunt sint blanditiis adipisci animi fugiat, deserunt omnis placeat quae dolorem hic.
+            Sapiente perspiciatis aliquid illo? Voluptatibus et atque quidem alias quaerat magnam pariatur harum, quam
+            animi hic dignissimos nemo quis fugit sint autem suscipit voluptatem, omnis corrupti maxime doloribus
+            provident. Fugit eligendi, natus ut asperiores dolorum voluptatibus qui dolorem veniam ab voluptate earum
+            labore. Ducimus veniam ipsam in modi animi voluptatum fuga nobis esse quibusdam molestiae ut, eos totam
+            perspiciatis temporibus necessitatibus minus corporis itaque quo facere cum architecto velit similique
+            reiciendis quis. Quasi aliquid doloremque qui non a saepe! Vero quisquam, eveniet est similique temporibus
+            ad nesciunt laborum laboriosam cumque, maxime dicta ipsum corrupti alias facere quaerat incidunt. Voluptate
+            voluptatibus quam, libero quos consequuntur vel consectetur natus. Veniam at vitae maiores similique
+            laboriosam culpa neque qui molestiae, aperiam voluptatum atque nesciunt in repudiandae voluptas fugiat
+            ratione dolorem odit quod esse doloremque necessitatibus veritatis eveniet dicta consequatur. Hic culpa
+            quidem tempore eius reiciendis fuga quaerat reprehenderit rem facere ad ipsum ducimus velit, vitae odio
+            dolorum voluptatibus sunt et aliquid voluptatum accusantium voluptatem fugit? Quia expedita molestiae
+            assumenda modi, molestias debitis similique rem sequi illum qui aliquid magnam nam, amet porro minus
+            perspiciatis provident, maiores delectus incidunt tempore ipsum quo! Mollitia reprehenderit facere id
+            exercitationem porro? Sit excepturi molestias officia. Consequuntur nostrum officia blanditiis accusamus eos
+            odio, voluptas sunt sed, hic, architecto omnis in unde laudantium earum. Explicabo libero expedita accusamus
+            nesciunt earum quibusdam reiciendis incidunt assumenda sunt modi at dignissimos laboriosam repellat, magni
+            odio accusantium ea dolorum porro ipsum! Totam nisi necessitatibus, sapiente ipsum nulla at voluptate
+            incidunt commodi natus, dolorum ipsam suscipit obcaecati possimus iste, nam ea? Rem at nesciunt ut,
+            asperiores veritatis eveniet. Eius ut sequi voluptates, amet fuga quasi reiciendis, quos iste, minima
+            voluptatem vero libero minus beatae velit.</div>
+        <div class="box">I Am a box</div>
+        <div class="box">I Am a box</div>
+        <input type="text" placeholder="Type your name here ">
+    </div>
+</body>
+
+</html>

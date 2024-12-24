@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+</head>
+<style>
+    body{
+        color: black;
+        background-color: red;
+    }
+    /* Syntax :-  @media not|only mediatype and (expressions) {
+    CSS code. 
+    } */
+     @media  screen and (orientation: landscape) {
+        body{
+            background-color: yellow;
+        }
+        
+     }
+     @media only screen and (max-width:500px) {
+        body{
+            background-color: blue;
+            color: yellowgreen;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+     }
+     .boxes{
+        display: flex;
+     }
+     .box{
+        width: 344px;
+        height: 344px;
+        background-color: black;
+        margin: 2px;
+        padding: 3px;
+     }
+</style>
+<body>
+    <div>
+        I am a Good Boy.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
