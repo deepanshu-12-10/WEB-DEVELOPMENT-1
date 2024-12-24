@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Variables</title>
 </head>
 <style>
     :root{
-        --color: rgb(213, 23, 23);
+        /* Gobal Variable */
+        --color: rgb(10, 245, 22);
         --seccolor: rgb(223, 223, 21);
         --defpad:5px;
         --defops:0.4;
@@ -18,7 +19,7 @@
         padding: 0;
     }
     .nav{
-        background-color: lightgreen;
+        background-color: rgb(33, 35, 33);
         color: var(--color);
     }
     ul{
@@ -28,11 +29,12 @@
         opacity: var(--defops);
         list-style: none;
         padding: var(--defpad);
-        border: 2px solid var(--seccolor);
+        border: 3px solid var(--seccolor);
 
     }
     ul li:first-child {
-        --color: rgb(234, 143, 7);
+        /* Local Variable */
+        --color: rgb(54, 15, 206); 
         background-color: var(--color);
     }
     .container{
