@@ -61,7 +61,7 @@ section span img{
     font-weight: 700;
     margin: 12px 0;
     cursor: pointer;
-    /* font-size: 20px; */
+    font-size: 20px;
 }
 .green{
     background:#5cb85c;
