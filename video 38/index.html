@@ -10,10 +10,24 @@
         border: 2px solid black;
         display: flex;
         height: 60vh;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* there is no justify-items in flex box */
+        /* align-items: center; */ /*we use this when we have to center only one single line */
+        align-content: center; /* we use this when we have multiple lines after using flex wrap. */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column; */
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        /* gap: 10px;
+        row-gap: 20px;
+        column-gap: 2px; */
+        gap: 20px 2px;
     }
     .item{
+        flex-grow: 2;
+        flex-shrink: 2;
         width: 62px;
         height: 62px;
         border: 1px solid red;
@@ -25,6 +39,46 @@
 <body>
     <main>
         <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>

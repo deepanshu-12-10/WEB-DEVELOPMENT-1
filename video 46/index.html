@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    .container{
+        width: 30vw;
+        height: 80vh;
+        background-color: lightgreen;
+    }
+    .box{
+        width: 34px;
+        height: 45px;
+        /* background-color: red; */
+        /* animation-name: deepanshuKaAnimation ;
+        animation-duration: 3s ;
+        animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse ;
+        animation-play-state: running; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: deepanshuKaAnimation 3s ease-in-out 2s infinite,
+                deepanshu2 3s ease-in-out 3s 1;
+    }
+    @keyframes deepanshuKaAnimation{
+        from{
+background-color: red;
+        }
+        to{
+            background-color: yellow;
+            transform: translateX(1000px);
+        }
+    }
+    @keyframes deepanshu2{
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(220deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+  Box
+        </div>
+    </div>
+</body>
+</html>
